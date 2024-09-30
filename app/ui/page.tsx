@@ -1,3 +1,5 @@
-export default function Page() {
-  return <div>Topics Page</div>;
+export default async function Page() {
+  await new Promise((r) => setTimeout(r, 3000));
+
+  return (<div>Topics Page</div>);
 }
