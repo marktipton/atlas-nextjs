@@ -5,7 +5,7 @@ import { HashtagIcon } from "@heroicons/react/24/outline";
 
 export default async function Page({ params }: { params: { id: string } }) {
 
-  await new Promise((r) => setTimeout(r, 3000));
+  await new Promise((r) => setTimeout(r, 1500));
   const topic = await fetchTopic(params.id);
   const questions = await fetchQuestions(params.id);
 

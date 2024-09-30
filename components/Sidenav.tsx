@@ -11,7 +11,7 @@ export default async function SideNav() {
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
       <Logo />
       <div className="flex grow flex-row justify-between space-x-2 md:flex-col md:space-x-0 md:space-y-2 overflow-scroll">
-        <NavLink name="Topics" href="/ui" />
+        <NavLink name="Topics" href="/ui/*" />
         <TopicLinks />
         <div className="hidden h-auto w-full grow rounded-md bg-gray-50 md:block"></div>
         <NewTopicButton />
